@@ -1,5 +1,9 @@
 <template>
   <div>
+    <Head>
+      <Title>{{ product.title }}</Title>
+      <Meta name="description" :content="splitDescription(product.description, 40)" />
+    </Head>
     <ProductDetails :product="product" />
   </div>
 </template>
@@ -17,6 +21,16 @@ if (!product.value) {
 definePageMeta({
   layout: 'products'
 })
+
+function splitDescription(string, length) {
+  //Обрізання опису зі збереженням останнього цілого слова
+  const truncateString = (str, length) => str.length <= length ? str : str.slice(0, length).split(' ').slice(0, -1).join(' ') + '...';
+
+  return truncateString(string, length);
+}
+
+
+
 </script>
 
 <style scoped>
