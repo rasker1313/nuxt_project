@@ -1,24 +1,40 @@
 <template>
-  <div>
-    <header class="shadow-sm bg-white">
-      <NuxtLoadingIndicator class="text-center">Test</NuxtLoadingIndicator>
-      <nav class="container mx-auto p-4 flex justify-between ">
-        <NuxtLink to="/" class="font-bold">Main page</NuxtLink>
-        <ul class="flex gap-4">
-          <li><NuxtLink to="/">Home</NuxtLink></li>
-          <li><NuxtLink to="/about">About</NuxtLink></li>
-          <li><NuxtLink to="/products" class="btn">Products</NuxtLink></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="container mx-auto p-4">
+  <div class="flex flex-col min-h-full">
+    <Header />
+    <div class="wrapper relative">
       <slot />
     </div>
+    <Footer />
+    <UnderFooter />
   </div>
 </template>
 
-<style scoped>
-  .router-link-exact-active {
-    color: aquamarine;
+<script>
+import { useRoute } from 'vue-router';
+import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
+import UnderFooter from '@/components/UnderFooter.vue'
+export default {
+  components: { Header, Footer, UnderFooter },
+  setup() {
+    const route = useRoute();
+    const isIndexPage = route.name === 'index';
+
+    return {
+      isIndexPage
+    };
   }
+};
+</script>
+
+<style>
+html, body, #__nuxt {
+  height: 100%;
+}
+body.overflow-hidden {
+  overflow: hidden;
+}
+.wrapper{
+  flex: 1 1 auto;
+}
 </style>
