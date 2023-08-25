@@ -1,15 +1,15 @@
 <template>
   <div class="header-banner">
     <div class="header-banner-text relative my-24 w-full md:w-2/4 pr-8">
-      <h1 class="text-4xl font-bold mb-6">
-          <TxtRotate :data='[ "Keysoft", "AI технології"]' class="text-blue-500" /> майбутнє в управлінні вашим готелем
+      <h1 class="text-5xl font-bold mb-6 text-neutral-800">
+        <span class="text-blue-600">Automate</span> <TxtRotate :data='[ "your check-ins", "door opening", "payments", "your hotel business"]' />
       </h1>
       <p class="text-lg mb-8">
-        Автоматизація, швидкість, комфорт та ефективність. Все, що потрібно вашому готелю для сучасного управління.
+        A modern approach to hotel management in the digital age: automated solutions to optimize your business.
       </p>
-      <div>
-        <button class="btn mr-4 mb-4">Замовити консультацію</button>
-        <button class="btn btn-gray">Дізнатися більше</button>
+      <div class="flex gap-3 items-center flex-wrap">
+        <Button size="lg">Get in Touch</Button>
+        <button class="text-sm font-bold text-neutral-800 hover:text-neutral-600 px-2 py-2">Explore how it works <Icon name="solar:double-alt-arrow-down-line-duotone" class="h-5" /></button>
       </div>
     </div>
     <div class="header-banner-image-block w-2/4 hidden md:block">
@@ -20,9 +20,11 @@
 
 <script>
 import TxtRotate from "~/components/TxtRotate.vue";
+import Button from "~/components/UI/Button.vue";
 export default {
   components: {
-    TxtRotate
+    TxtRotate,
+    Button
   }
 };
 </script>

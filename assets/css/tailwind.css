@@ -3,53 +3,72 @@
 @tailwind utilities;
 
 @layer components {
-    .btn{
+    .btn {
         @apply bg-blue-600 text-white px-3 py-2 rounded-md font-bold text-sm text-white hover:bg-blue-500
     }
-    .btn-gray{
+
+    .btn-xl {
+        @apply px-10 pt-3 pb-3.5 text-sm leading-6
+    }
+
+    .btn-gray {
         @apply bg-[#ebebeb] text-[#333333] hover:bg-gray-300
     }
-    .card{
+
+    .card {
         @apply p-3 rounded-md bg-white shadow-md h-full
     }
+
     .thumb {
         @apply h-40 m-auto
     }
+
     .header {
         @apply bg-indigo-50 relative z-10 sm:flex sm:justify-between sm:items-center sm:p-4 sm:px-10
     }
+
     .header-link {
         @apply block px-4 py-1 text-[#262626] font-semibold
     }
-    .hover-link{
+
+    .hover-link {
         @apply hover:drop-shadow-[0_1px_4px_rgba(0,0,255,0.3)]
         /*@apply hover:opacity-80*/
     }
-    .header-banner{
+
+    .header-banner {
         @apply flex justify-between items-stretch lg:items-center my-4 px-4
     }
-    .menu-button{
+
+    .menu-button {
         @apply relative w-10 h-10 block cursor-pointer text-gray-500 hover:text-white focus:text-white focus:outline-none
     }
-    .menu-icon-line{
+
+    .menu-icon-line {
         @apply block absolute mb-1 h-1 w-7 bg-current transform transition duration-500 ease-in-out text-neutral-500 rounded-sm
     }
-    .payment-icon{
+
+    .payment-icon {
         @apply w-16 rounded-2xl mr-4
     }
-    .footer{
+
+    .footer {
         @apply bg-indigo-950 text-white p-4 flex items-center justify-between
     }
-    .underfooter{
+
+    .underfooter {
         @apply bg-indigo-950 text-white px-4 py-2 flex items-center justify-between border-t border-white
     }
-    .bottom-link{
+
+    .bottom-link {
         @apply hover-link w-full mb-1
     }
-    .form-input{
+
+    .form-input {
         @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none
     }
-    .form-button{
+
+    .form-button {
         @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none
     }
 }

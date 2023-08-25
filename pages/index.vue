@@ -1,16 +1,16 @@
 <template>
   <div class="text-lg">
     <div class="bg-gradient-to-b from-indigo-50 to-white px-8 -mt-4">
-      <div class="mx-auto">
+      <div class="container mx-auto">
         <HeaderBanner />
       </div>
     </div>
-    <div class="mx-auto">
-      <h2 class="text-center text-3xl font-bold mt-20">Партнери</h2>
-      <ClientOnly>
-        <LogoSlider />
-      </ClientOnly>
-    </div>
+<!--    <div class="mx-auto">-->
+<!--      <h2 class="text-center text-3xl font-bold mt-20">Партнери</h2>-->
+<!--      <ClientOnly>-->
+<!--        <LogoSlider />-->
+<!--      </ClientOnly>-->
+<!--    </div>-->
     <InfoBlock :direction="'left'" :img="'https://dummyimage.com/720x600'">
       <template v-slot:title>Автоматичний доступ до помешкання</template>
       <template v-slot:description>
@@ -52,7 +52,7 @@
 </template>
 
 <script>
-import HeaderBanner from '@/components/HeaderBanner.vue'
+import HeaderBanner from '~/components/HeroSection.vue'
 import InfoBlock from "~/components/InfoBlock.vue";
 export default {
   components: { HeaderBanner, InfoBlock }
