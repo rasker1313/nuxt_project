@@ -2,7 +2,7 @@
   <div class="top-bg"></div>
   <div class="bot-bg"></div>
   <div class="container mx-auto py-12 relative z-10">
-    <div class="flex justify-between items-center md:flex-wrap lg:flex-nowrap px-6">
+    <div class="flex justify-between items-center flex-wrap lg:flex-nowrap px-6">
       <div class="text-left text-lg w-full lg:w-2/4 xl:w-2/3 py-20 lg:mr-20 2xl:mr-40">
         <h1 class="text-3xl font-bold mb-4">Get access</h1>
         <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque commodi consequatur culpa cumque debitis deleniti, ducimus ea eius, eos hic impedit inventore ipsa iusto laboriosam libero maxime optio porro praesentium quidem quo ratione recusandae rem sit vel vitae voluptate.</p>

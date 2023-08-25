@@ -26,7 +26,7 @@
         </div>
         <div class="flex justify-between items-center">
           <LanguageChanger />
-          <button class="btn hidden lg:block">{{ $t('buttons.get_access')}}</button>
+          <NuxtLink to="/get-access" class="btn hidden lg:block">{{ $t('buttons.get_access')}}</NuxtLink>
         </div>
       </div>
     </div>

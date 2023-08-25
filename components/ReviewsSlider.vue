@@ -5,7 +5,7 @@
   </div>
   <carousel ref="carousel" v-bind="settings" class="mt-10">
     <slide v-for="(slide, index) in slides" :key="index">
-      <div class="flex flex-wrap rounded-3xl text-left py-6 px-8">
+      <div class="bg-white flex flex-wrap rounded-3xl text-left py-6 px-8">
         <div class="w-full mb-6">{{ slide.description }}</div>
         <div class="flex justify-center items-center w-full">
           <div class="mr-2 w-full">
@@ -29,7 +29,7 @@ export default {
     return {
       settings: {
         itemsToShow: 1,
-        //autoplay: 3000,
+        autoplay: 3000,
         transition: 500,
         pauseAutoplayOnHover: true,
         wrapAround: true,
@@ -92,8 +92,8 @@ export default {
 </script>
 
 <style scoped>
-.carousel__slide>div{
-  box-shadow: 0 0 15px 5px rgba(238,242,255,1);
+.carousel{
+  height:440px;
 }
 .carousel__slide--sliding {
   transition: 0.5s;

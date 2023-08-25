@@ -1,31 +1,29 @@
 <template>
-  <div class="footer p-4 py-10 flex items-start flex-wrap">
-    <div class="w-full md:w-2/4 flex justify-between ">
-      <div class="w-2/4">
-        <h3 class="text-lg font-bold mb-2">Company</h3>
-        <div class="flex flex-wrap">
-          <NuxtLink class="bottom-link" to="#">Careers</NuxtLink>
-          <NuxtLink class="bottom-link" to="#">FAQs</NuxtLink>
-          <NuxtLink class="bottom-link" to="#">Partners</NuxtLink>
-          <NuxtLink class="bottom-link" to="#">Term of use</NuxtLink>
-        </div>
-      </div>
-      <div class="w-2/4 px-4">
-        <h3 class="text-lg font-bold mb-2">Features</h3>
-        <div class="flex flex-wrap">
-          <NuxtLink class="bottom-link" to="#">Online Check-in</NuxtLink>
-          <NuxtLink class="bottom-link" to="#">Legal Complience</NuxtLink>
-          <NuxtLink class="bottom-link" to="#">Payments</NuxtLink>
-          <NuxtLink class="bottom-link" to="#">Identify verification</NuxtLink>
-          <NuxtLink class="bottom-link" to="#">Self Check-in</NuxtLink>
-        </div>
+  <div class="footer px-8 py-16 flex items-start flex-wrap">
+    <div class="w-full md:w-1/2 lg:w-2/6 mb-10 lg:mb-0">
+      <h3 class="text-lg font-bold mb-4 text-white">Product</h3>
+      <div class="flex flex-wrap">
+        <NuxtLink class="bottom-link" to="#">Features</NuxtLink>
+        <NuxtLink class="bottom-link" to="#">Learn</NuxtLink>
+        <NuxtLink class="bottom-link" to="#">Plugins</NuxtLink>
       </div>
     </div>
-    <div class="w-full md:w-2/4 flex justify-center">
-      <div class="w-4/5">
-        <h3 class="text-lg font-bold mb-2">Contact us</h3>
-        <div class="w-full">
-
+    <div class="w-full md:w-1/2 lg:w-2/6 mb-10 lg:mb-0">
+      <h3 class="text-lg font-bold mb-4 text-white">Features</h3>
+      <div class="flex flex-wrap">
+        <NuxtLink class="bottom-link" to="#">Automation</NuxtLink>
+        <NuxtLink class="bottom-link" to="#">Guest Assistant App</NuxtLink>
+        <NuxtLink class="bottom-link" to="#">Startup</NuxtLink>
+      </div>
+    </div>
+    <div class="w-full lg:w-2/6 flex justify-start">
+      <div>
+        <h3 class="text-lg font-bold mb-4 text-white">Resources</h3>
+        <div class="flex flex-wrap">
+          <NuxtLink class="bottom-link" to="#">Blog</NuxtLink>
+          <NuxtLink class="bottom-link" to="#">Updates</NuxtLink>
+          <NuxtLink class="bottom-link" to="#">Community</NuxtLink>
+          <NuxtLink class="bottom-link" to="#">Contact</NuxtLink>
         </div>
       </div>
     </div>
