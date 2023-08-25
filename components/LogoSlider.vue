@@ -1,5 +1,5 @@
 <template>
-  <carousel v-bind="settings" class="mt-16">
+  <carousel v-bind="settings" class="mt-16 container mx-auto">
     <slide v-for="(slide, index) in slides" :key="index">
       <img class="mx-auto max-h-20 object-cover px-2" :src="slide.img" :alt="slide.title" />
     </slide>
@@ -22,19 +22,19 @@ export default {
         breakpoints: {
           640: {
             itemsToShow: 2,
-            snapAlign: 'center',
+            snapAlign: 'start',
           },
           768: {
             itemsToShow: 3,
-            snapAlign: 'center',
+            snapAlign: 'start',
           },
           1024: {
             itemsToShow: 4,
-            snapAlign: 'center',
+            snapAlign: 'start',
           },
           1200: {
             itemsToShow: 6,
-            snapAlign: 'center',
+            snapAlign: 'start',
           },
         }
       },
