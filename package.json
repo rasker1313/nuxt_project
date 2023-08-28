@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@formkit/nuxt": "^0.18.3",
+    "@headlessui/vue": "^1.7.16",
     "libphonenumber-js": "^1.10.41",
     "maz-ui": "^3.9.0",
     "vue-kinesis": "^2.0.5",

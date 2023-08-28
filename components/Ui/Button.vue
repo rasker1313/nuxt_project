@@ -1,7 +1,7 @@
 <template>
-  <button type="button" :class="btnClasses" class="font-bold rounded-md flex gap-1.5 justify-center items-end transition-all">
+  <button type="button" :class="btnClasses" class="font-bold rounded-md flex gap-1.5 justify-center items-center transition-all">
     <slot></slot>
-    <Icon v-if="icon" :name="iconLibrary + ':' + icon" height="17px" width="17px" class="text-slate-950/50 mb-0.5" />
+    <Icon v-if="icon" :name="iconLibrary + ':' + icon" height="17px" width="17px" class="text-slate-950/50" />
   </button>
 </template>
 

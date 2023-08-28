@@ -95,6 +95,13 @@
     }
 }
 
+.btn-dark {
+    @apply text-white bg-white/5 hover:bg-white/20 ring-1 ring-white/20 hover:ring-white/30;
+    & svg {
+        @apply text-white/70;
+    }
+}
+
 .btn-text {
     @apply bg-none text-neutral-900 hover:text-neutral-600
 }
@@ -112,5 +119,5 @@
 }
 
 .btn-xl {
-    @apply px-10 py-3 text-sm font-semibold leading-6
+    @apply px-7 py-3 text-sm font-semibold leading-6
 }
