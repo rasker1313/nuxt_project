@@ -1,0 +1,21 @@
+{
+  "button": {
+    "get_in_touch" : "Kontakt aufnehmen"
+  },
+  "language": "Deutsch",
+  "section": {
+    "hero": {
+      "title": {
+        "main": "Automatisieren",
+        "option_1": "Ihrer Check-Ins",
+        "option_2": "Türöffnung",
+        "option_3": "Zahlungen",
+        "option_4": "Ihres Hotelgeschäfts"
+      },
+      "button": {
+        "secondary": "Entdecken Sie, wie es funktioniert"
+      },
+      "description": "Ein moderner Ansatz für das Hotelmanagement im digitalen Zeitalter: automatisierte Lösungen zur Optimierung Ihres Geschäfts."
+    }
+  }
+}

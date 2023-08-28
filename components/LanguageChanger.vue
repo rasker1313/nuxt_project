@@ -20,6 +20,11 @@ const isOpen = ref(false)
 
 const flagImg = (loc) => {
   switch (loc) {
+    case 'de':
+      return {
+        flag: 'DE',
+        name: 'Deutsch',
+      }
     case 'en':
       return {
         flag: 'GB',

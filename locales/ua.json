@@ -1,6 +1,21 @@
 {
-  "buttons": {
-    "get_access" : "Отримати доступ"
+  "button": {
+    "get_in_touch" : "Get in Touch"
   },
-  "language": "Українська"
+  "language": "English",
+  "section": {
+    "hero": {
+      "title": {
+        "main": "Automate",
+        "option_1": "your check-ins",
+        "option_2": "door opening",
+        "option_3": "payments",
+        "option_4": "your hotel business"
+      },
+      "button": {
+        "secondary": "Explore how it works"
+      },
+      "description": "A modern approach to hotel management in the digital age: automated solutions to optimize your business."
+    }
+  }
 }

@@ -6,17 +6,17 @@
           <div class="basis-8/12 relative flex flex-col justify-between h-fit w-full">
             <div>
               <h1 class="relative top-0 left-0 text-5xl leading-tight font-bold text-neutral-800 mb-4 min-h-[120px] max-w-[510px] z-10">
-                <span class="text-blue-600">Automate</span> <TxtRotate :data='[ "your check-ins", "door opening", "payments", "your hotel business"]' />
+                <span class="text-blue-600">{{ $t('section.hero.title.main') }}</span> <TxtRotate :data='rotateData' />
               </h1>
               <DecorationsBrokenLine class="absolute top-9 left-3 right-3 max-w-md	 fill-blue-400/30 z-0" />
             </div>
             <div>
               <p class="text-lg leading-7 text-slate-700 max-w-[510px]">
-                A modern approach to hotel management in the digital age: automated solutions to optimize your business.
+                {{ $t('section.hero.description') }}
               </p>
               <div class="flex gap-3 items-center flex-wrap mt-8 ">
-                <UiButton size="lg">Get in Touch</UiButton>
-                <UiButton size="lg" color="light" icon="double-alt-arrow-down-line-duotone">Explore how it works</UiButton>
+                <UiButton size="lg">{{ $t('button.get_in_touch') }}</UiButton>
+                <UiButton size="lg" color="light" icon="double-alt-arrow-down-line-duotone">{{ $t('section.hero.button.secondary') }}</UiButton>
               </div>
             </div>
           </div>
@@ -51,6 +51,16 @@ import { KinesisContainer, KinesisElement} from 'vue-kinesis'
 export default {
   components: {
     TxtRotate, KinesisContainer, KinesisElement
+  },
+  computed: {
+    rotateData() {
+      return [
+        this.$t('section.hero.title.option_1'),
+        this.$t('section.hero.title.option_2'),
+        this.$t('section.hero.title.option_3'),
+        this.$t('section.hero.title.option_4')
+      ]
+    }
   }
 };
 </script>

@@ -17,16 +17,17 @@
           </NuxtLink>
           <div class="hidden lg:block">
             <nav class="flex justify-between text-lg">
-              <NuxtLink class="header-link hover-link" to="#">Функції</NuxtLink>
-              <NuxtLink class="header-link hover-link" to="#">Рішення</NuxtLink>
-              <NuxtLink class="header-link hover-link" to="#">Ціни</NuxtLink>
-              <NuxtLink class="header-link hover-link" to="#">Блог</NuxtLink>
+              <NuxtLink class="header-link" to="#">Функції</NuxtLink>
+              <NuxtLink class="header-link" to="#">Рішення</NuxtLink>
+              <NuxtLink class="header-link" to="#">Ціни</NuxtLink>
+              <NuxtLink class="header-link" to="#">Блог</NuxtLink>
+<!--              <NavPopover>Features</NavPopover>-->
             </nav>
           </div>
         </div>
         <div class="flex justify-between items-center">
           <LanguageChanger />
-          <NuxtLink to="/get-access" class="btn hidden lg:block">{{ $t('buttons.get_access')}}</NuxtLink>
+          <UiButton size="md">{{ $t('buttons.get_in_touch')}}</UiButton>
         </div>
       </div>
     </div>
@@ -34,28 +35,26 @@
   <Transition name="slide-fade">
     <div v-if="isOpen" class="mainDropdownMenu absolute bg-indigo-50 w-full z-30 flex items-center justify-center flex-wrap flex-col lg:hidden">
       <nav class="px-2 pt-2 pb-4 flex text-lg items-center flex-col w-full">
-        <NuxtLink class="header-link hover-link mb-6 block w-full text-center" to="#">Функції</NuxtLink>
-        <NuxtLink class="header-link hover-link mb-6 block w-full text-center" to="#">Рішення</NuxtLink>
-        <NuxtLink class="header-link hover-link mb-6 block w-full text-center" to="#">Ціни</NuxtLink>
-        <NuxtLink class="header-link hover-link block w-full text-center" to="#">Блог</NuxtLink>
+        <NuxtLink class="header-link mb-6 block w-full text-center" to="#">Функції</NuxtLink>
+        <NuxtLink class="header-link mb-6 block w-full text-center" to="#">Рішення</NuxtLink>
+        <NuxtLink class="header-link mb-6 block w-full text-center" to="#">Ціни</NuxtLink>
+        <NuxtLink class="header-link block w-full text-center" to="#">Блог</NuxtLink>
       </nav>
-      <button class="btn mt-6 min-w-[50%]">{{ $t('buttons.get_access')}}</button>
+      <UiButton size="lg">{{ $t('buttons.get_in_touch')}}</UiButton>
     </div>
   </Transition>
 
 </template>
 
 <script>
-import LanguageChanger from "~/components/LanguageChanger.vue";
-import HeaderMenu from "~/components/HeaderMenu.vue";
+import LanguageChanger from "~/components/LanguageChanger.vue"
+import HeaderMenu from "~/components/HeaderMenu.vue"
 export default {
+  components: { LanguageChanger, HeaderMenu },
   data() {
     return {
       isOpen: false,
     }
-  },
-  components: {
-        LanguageChanger, HeaderMenu
   },
   watch: {
     isOpen(val) {

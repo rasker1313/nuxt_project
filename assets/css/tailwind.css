@@ -27,11 +27,6 @@
         @apply block px-4 py-1 text-[#262626] font-semibold
     }
 
-    .hover-link {
-        @apply hover:drop-shadow-[0_1px_4px_rgba(0,0,255,0.3)]
-        /*@apply hover:opacity-80*/
-    }
-
     .header-banner {
         @apply flex justify-between items-stretch lg:items-center my-4 px-4
     }
@@ -57,7 +52,7 @@
     }
 
     .bottom-link {
-        @apply hover-link w-full mb-3
+        @apply w-full mb-3
     }
 
     .form-input {
