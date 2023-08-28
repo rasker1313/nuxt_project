@@ -30,13 +30,13 @@
               placeholder="keysoft@keysoft.com"
               prefix-icon="email"
           />
-<!--          <MazPhoneNumberInput
+          <MazPhoneNumberInput
               v-model="phoneNumber"
               show-code-on-list
               color="info"
               @update="results = $event"
               :success="results?.isValid"
-          />-->
+          />
           <FormKit
               type="select"
               label="Type of property"

@@ -1,6 +1,6 @@
 <template>
-  <NuxtClientFallback>
-    <kinesis-container event="move" :duration="2500">
+  <ClientOnly>
+    <kinesis-container event="move" :duration="2000">
       <div class="container mx-auto py-32 px-6 lg:px-8">
         <div class="min-h-[440px] h-fit flex flex-col lg:flex-row	justify-between items-center gap-12">
           <div class="basis-8/12 relative flex flex-col justify-between h-fit w-full">
@@ -21,16 +21,16 @@
             </div>
           </div>
           <div class="h-[260px] sm:h-[380px] md:h-[420px] lg:h-[400px] xl:h-[460px] 2xl:h-[500px] w-full grow relative">
-            <kinesis-element :strength="1" class="absolute rounded-xl h-auto z-50" style="width: 80%; top: 5%; left: 5%">
+            <kinesis-element :strength="1" class="absolute rounded-xl h-auto z-50 ring-1 ring-slate-600/20" style="width: 80%; top: 5%; left: 5%">
               <img class="rounded-xl h-full w-auto" src="@/assets/images/hero/app-calendar.png" alt="Keysoft Calendar Ui">
             </kinesis-element>
             <kinesis-element :strength="8" class="absolute rounded-xl bg-gradient-to-r from-blue-600/90 to-indigo-600/80 z-20" style="width: 80%; top: 2%; left: 6%; rotate: 3deg">
-              <img class="opacity-0 h-auto" src="@/assets/images/hero/app-calendar.png" alt="Keysoft Calendar Ui" style="padding: 4% 0;">
+              <img class="opacity-0 h-auto" src="@/assets/images/hero/app-calendar.png" alt="Keysoft Calendar Ui" style="padding: 3% 0;">
             </kinesis-element>
             <kinesis-element :strength="20" class="absolute rounded-xl bg-gradient-to-r from-slate-300/90 to-slate-400/70 z-10" style="width: 80%; top: 1%; left: 2%; rotate: -2deg">
               <img class="opacity-0 h-auto" src="@/assets/images/hero/app-calendar.png" alt="Keysoft Calendar Ui">
             </kinesis-element>
-            <kinesis-element :strength="2" class="absolute rounded-xl h-auto z-50" style="width: 24%; right: 5%; bottom: 2%;">
+            <kinesis-element :strength="2" class="absolute rounded-xl h-auto z-50 ring-1 ring-slate-600/20" style="width: 24%; right: 5%; bottom: 2%;">
               <img class="rounded-xl h-auto w-full" src="@/assets/images/hero/app-public-page.jpg" alt="Keysoft Calendar Ui">
             </kinesis-element>
             <kinesis-element :strength="4" class="absolute rounded-xl z-40 bg-gradient-to-r from-teal-600/80 from-70% to-blue-700/90" style="width: 24%; right: 3%; bottom: 3%; rotate: 2deg">
@@ -40,7 +40,7 @@
         </div>
       </div>
     </kinesis-container>
-  </NuxtClientFallback>
+  </ClientOnly>
 </template>
 
 <script>

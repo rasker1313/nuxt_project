@@ -53,6 +53,7 @@
       </template>
       <template v-slot:button>Переглянути докладно</template>
     </InfoBlock>
+    <cta-section></cta-section>
     <div class="bg-gradient-to-t from-indigo-50 to-white">
       <div class="container mx-auto relative reviews px-8">
         <div class="flex items-center justify-between flex-wrap lg:flex-nowrap">
@@ -68,8 +69,9 @@
 <script>
 import InfoBlock from "~/components/InfoBlock.vue";
 import CoreFeatures from "~/components/CoreFeatures.vue";
+import CtaSection from "~/components/CtaSection.vue";
 export default {
-  components: { InfoBlock, CoreFeatures }
+  components: { CtaSection, InfoBlock, CoreFeatures }
 }
 </script>
 

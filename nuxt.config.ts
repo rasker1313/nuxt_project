@@ -14,10 +14,12 @@ export default defineNuxtConfig({
   ],
   plugins: [{ src: '~/plugins/vue-kinesis.js', mode: 'client' }],
   css: [
+    'maz-ui/css/main.css',
     '~/assets/css/tailwind.css',
     '~/assets/css/style.css',
   ],
   build: {
+    transpile: ['maz-ui'],
   },
   app: {
     head: {
