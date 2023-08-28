@@ -1,9 +1,7 @@
 <template>
   <div class="text-lg">
-    <div class="bg-gradient-to-b from-indigo-50 to-white px-8 -mt-4">
-      <div class="container mx-auto">
-        <HeaderBanner />
-      </div>
+    <div class="bg-gradient-to-b from-indigo-50 to-white -mt-4">
+      <HeroSection />
     </div>
 <!--    <div class="mx-auto">-->
 <!--      <h2 class="text-center text-3xl font-bold mt-20">Партнери</h2>-->
@@ -68,11 +66,10 @@
 </template>
 
 <script>
-import HeaderBanner from '~/components/HeroSection.vue'
 import InfoBlock from "~/components/InfoBlock.vue";
 import CoreFeatures from "~/components/CoreFeatures.vue";
 export default {
-  components: { HeaderBanner, InfoBlock, CoreFeatures }
+  components: { InfoBlock, CoreFeatures }
 }
 </script>
 

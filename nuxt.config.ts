@@ -1,28 +1,34 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-      '@nuxtjs/tailwindcss',
-      'nuxt-icon',
-      '@nuxtjs/i18n',
-      '@formkit/nuxt'
+    '@nuxtjs/tailwindcss',
+    'nuxt-icon',
+    '@nuxtjs/i18n',
+    '@formkit/nuxt',
+    '@nuxt/devtools',
+    ['@nuxtjs/google-fonts', {
+      families: {
+        Inter: [400, 500, 600, 700, 800, 900],
+      }
+    }]
   ],
+  plugins: [{ src: '~/plugins/vue-kinesis.js', mode: 'client' }],
   css: [
-    'maz-ui/css/main.css',
     '~/assets/css/tailwind.css',
+    '~/assets/css/style.css',
   ],
   build: {
-    transpile: ['maz-ui'],
   },
   app: {
     head: {
       title: 'Keysoft',
       meta: [
-        { name: 'description', content: 'Keysoft landing page'}
+        { name: 'description', content: 'Keysoft landing page' }
       ],
       link: [
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons'}
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
       ]
     }
   },
-  devtools: { enabled: false },
+  devtools: { enabled: false }
 })
