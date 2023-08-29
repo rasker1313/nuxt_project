@@ -1,9 +1,9 @@
 <template>
   <div class="absolute right-6 -mt-10">
-    <Icon @click="next" class="text-5xl cursor-pointer" name="ic:baseline-keyboard-double-arrow-left" />
-    <Icon @click="prev" class="text-5xl cursor-pointer" name="ic:baseline-keyboard-double-arrow-right" />
+    <Icon @click="prev" class="text-5xl cursor-pointer" name="ic:baseline-keyboard-double-arrow-left" />
+    <Icon @click="next" class="text-5xl cursor-pointer" name="ic:baseline-keyboard-double-arrow-right" />
   </div>
-  <carousel ref="carousel" v-bind="settings" class="mt-10">
+  <carousel ref="carousel" v-bind="settings" class="pb-10 mt-10">
     <slide v-for="(slide, index) in slides" :key="index">
       <div class="bg-white flex flex-wrap rounded-3xl text-left py-6 px-8">
         <div class="w-full mb-6">{{ slide.description }}</div>
@@ -23,6 +23,8 @@
 <script>
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide } from 'vue3-carousel'
+
+import 'vue3-carousel/dist/carousel.css'
 
 export default {
   data() {
@@ -92,34 +94,27 @@ export default {
 </script>
 
 <style scoped>
-.carousel{
-  height:440px;
+
+.carousel__slide {
+  padding: 5px;
 }
+
+.carousel__track {
+  transform-style: preserve-3d;
+}
+
 .carousel__slide--sliding {
   transition: 0.5s;
 }
+
 .carousel__slide--prev {
-  padding-right:50px;
-}
-.carousel__slide--next {
-  padding-left:50px;
-}
-.carousel__slide--active {
-  padding: 40px 30px;
   opacity: 1;
-  transform: rotateY(0) scale(1.2);
+  transform: rotateY(10deg) scale(0.85);
 }
 
-@media (max-width: 1200px) {
-  .carousel__slide--active {
-    padding-left: 40px;
-  }
-}
-@media (max-width: 768px) {
-  .carousel__slide--active {
-    padding-right: 50px;
-    padding-left: 50px;
-  }
+.carousel__slide--next {
+  opacity: 1;
+  transform: rotateY(10deg) scale(0.85);
 }
 
 </style>
