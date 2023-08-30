@@ -70,7 +70,8 @@ export default {
 
 <style scoped>
 .mainDropdownMenu{
-  height: calc(100% - 95px);
+  /*height: calc(100% - 95px);*/
+  height: 100%;
 }
 .icon-transition {
   transition: transform 0.5s ease-in-out;

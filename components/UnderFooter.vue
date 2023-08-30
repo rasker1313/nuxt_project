@@ -1,13 +1,15 @@
 <template>
-  <div class="underfooter">
-    <div>© 2021-{{ currYear }}, Keysoft Cloud</div>
-    <div>
-      <NuxtLink to="#" class="mr-2 text-white hover:opacity-80">
-        <Icon class="text-2xl cursor-pointer" name="ri:instagram-fill" />
-      </NuxtLink>
-      <NuxtLink to="#" class="text-white hover:opacity-80">
-        <Icon class="text-2xl cursor-pointer" name="ri:twitter-fill" />
-      </NuxtLink>
+  <div class="bg-neutral-900 border-t border-neutral-600">
+    <div class="underfooter container">
+      <div>© 2021-{{ currYear }}, Keysoft Cloud</div>
+      <div>
+        <NuxtLink to="#" class="mr-2 text-white hover:opacity-80">
+          <Icon class="text-2xl cursor-pointer" name="ri:instagram-fill" />
+        </NuxtLink>
+        <NuxtLink to="#" class="text-white hover:opacity-80">
+          <Icon class="text-2xl cursor-pointer" name="ri:twitter-fill" />
+        </NuxtLink>
+      </div>
     </div>
   </div>
 </template>

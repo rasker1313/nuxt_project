@@ -44,11 +44,11 @@
     }
 
     .footer {
-        @apply bg-neutral-900 text-neutral-400 font-semibold p-4 flex items-center justify-between
+        @apply mx-auto text-neutral-400 font-semibold p-4 flex items-center justify-between
     }
 
     .underfooter {
-        @apply bg-neutral-900 text-neutral-400 px-8 py-8 flex items-center justify-between border-t border-neutral-600
+        @apply mx-auto text-neutral-400 px-8 py-8 flex items-center justify-between
     }
 
     .bottom-link {
