@@ -48,15 +48,27 @@
         <p class="mt-6">Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam turpis ipsum eu a sed convallis diam.</p>
       </template>
     </ContentSection>
+    <ReviewSection
+        :text="'Gravida quam mi erat tortor neque molestie. Auctor aliquet at porttitor a enim nunc suscipit tincidunt nunc. Et non lorem tortor posuere. Nunc eu scelerisque interdum eget tellus non nibh scelerisque bibendum.'"
+        :autor="'Judith Black'"
+        :autorPosition="'CEO of Workcation'"
+    >
+      <template v-slot:image>
+        <img class="shadow-2xl rounded-2xl object-cover absolute w-full h-full max-w-full"
+             src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2102&amp;q=80"
+             alt="">
+      </template>
+    </ReviewSection>
   </div>
 </template>
 
 <script>
 import PageHeroSection from '@/components/Features/PageHeroSection.vue'
 import ContentSection from '@/components/Features/ContentSection.vue'
+import ReviewSection from '@/components/Features/ReviewSection.vue'
 
 export default {
-  components: { PageHeroSection, ContentSection },
+  components: { PageHeroSection, ContentSection, ReviewSection },
   data(){
     return{
       underDescription: [
